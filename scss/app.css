@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 body {
   font-family: "Open Sans", sans-serif !important;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   background-color: #202A3C;
 }
@@ -114,7 +114,7 @@ body {
 
 .hero-intro p {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   text-align: center;
   margin: auto;
@@ -162,12 +162,19 @@ body {
 }
 
 .info .col-md-6 p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
   color: #fff;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   margin: auto;
   width: 75%;
+}
+
+@media (max-width: 990px) {
+  .info .col-md-6 p {
+    width: 100%;
+  }
 }
 
 .info .col-md-6 img {
@@ -206,7 +213,7 @@ body {
 
 .stay-productive .productive-text p {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   padding-bottom: 1em;
@@ -228,7 +235,7 @@ body {
 
 .stay-productive .productive-text a {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   border-bottom: 1px solid #65E2D9;
   color: #65E2D9;
@@ -270,7 +277,7 @@ body {
 
 .stay-productive .quotes .col-md-12 p {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   font-size: 17px;
   margin-bottom: 3rem;
@@ -290,7 +297,7 @@ body {
 
 .stay-productive .quotes .col-md-12 span {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -305,7 +312,7 @@ body {
 
 .stay-productive .quotes .col-md-12 small {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   font-size: 12px;
   font-weight: 500;
@@ -348,7 +355,7 @@ body {
 
 .stay-productive .get-early-access p {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   text-align: center;
   width: 70%;
@@ -412,7 +419,7 @@ body {
 
 .stay-productive .error {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   color: red;
   display: block;
@@ -428,7 +435,7 @@ body {
 
 .stay-productive .success {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   color: #15ff00;
   display: block;
@@ -446,7 +453,7 @@ body {
   background-color: #0B1523;
   padding-top: 8em;
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
 }
 
