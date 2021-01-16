@@ -4,6 +4,10 @@
     img.logo {
         padding-top: 15px;
         margin-bottom: 20px;
+        @media (max-width : $mobileS) {
+            width: 20%;
+            margin-bottom: -27px;
+        }
     }
     .fix-right {
         float: right;
@@ -16,12 +20,18 @@
             font-size: 20px;
             a {
                 font-family: $fontFamily;
-                color: white;                list-style: none;
+                color: white;                
+                list-style: none;
                 padding-right: 45px;
                 font-weight: bold;
                 text-decoration: none !important;
+                @media (max-width : $mobileS) {
+                    padding-right: 10px;
+                    font-size: 14px;
+                    margin-bottom: -51px;
+                }
                 &:hover {
-                    color: $darkBlue;
+                    color: $cyan;
                     transition:fade-in 0.1s;
                 }
             }
@@ -42,7 +52,7 @@
 
 .hero-intro {
     .col-md-12 {
-       // background-color: $darkBlue;
+     background-color: $testimonialsBackground;
         
     }
     img {
@@ -128,17 +138,26 @@
             padding-bottom: 1em;
             text-align: left;
             width: 100%;
+            @media (max-width : $mobileL) {
+                text-align: center;
+            }
         }
         a {
             @include p;
+            border-bottom: 1px solid $cyan;
             color: $cyan;
-            text-align: left;
             display: block;
+            text-align: left;
+            padding-bottom: 3px;
+            width: fit-content;
+            @media (max-width : $mobileL) {
+                text-align: center;
+            }
         }
     }
     .quotes {
-        margin-top: 15em;
-        margin-bottom: 15em;
+        margin-top: 20em;
+        margin-bottom: 10em;
         .quote-img{
             &::before {
                 content:url('../images/bg-quotes.png');
@@ -184,7 +203,7 @@
         position: relative;
         border-radius: 5px;
         box-shadow: 13px 7px 53px -5px rgba(32,42,60,1);
-        top: 295px;
+        top: 225px;
         padding: 12px;
 
         h1 {
@@ -201,6 +220,9 @@
             width: auto;
             margin: 2em auto;
             display: table;
+            @media (max-width : 636px) {
+                width: 50%;
+            }
             button {
                 @include button;
                 padding: 8px 26px;
@@ -245,23 +267,6 @@
 }
 }
 
-    /* The sticky class is added to the header with JS when it reaches its scroll position */
-    .sticky {
-        position: fixed;
-        top: -30px;
-        width: 100%;
-        z-index:999;
-        transition:  0.5s;
-        background-color: $cyan;
-        padding-top: 2em;
-      }
-      
-      /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-      .sticky + .content {
-        padding-top: 411px;
-      }
-    
-
      .footer {
         background-color: $footerBackground;
         padding-top: 8em;
@@ -275,8 +280,14 @@
         i {
             padding-right: 5px;
         }
-        p {
+        p > a {
+            color: white;
             padding-bottom: 5px;
+            text-decoration: none;
             word-break: break-all;
+            &:hover {
+                color: $cyan;
+                transition:fade-in 0.1s;
+            }
         }
     }

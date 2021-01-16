@@ -9,7 +9,15 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 75% !important;
+  width: 75%;
+}
+
+@media (max-width: 990px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 96% !important;
+  }
 }
 
 .header-row-fix {
@@ -20,6 +28,13 @@ body {
 .header-row-fix img.logo {
   padding-top: 15px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 685px) {
+  .header-row-fix img.logo {
+    width: 20%;
+    margin-bottom: -27px;
+  }
 }
 
 .header-row-fix .fix-right {
@@ -42,8 +57,16 @@ body {
   text-decoration: none !important;
 }
 
+@media (max-width: 685px) {
+  .header-row-fix ul li a {
+    padding-right: 10px;
+    font-size: 14px;
+    margin-bottom: -51px;
+  }
+}
+
 .header-row-fix ul li a:hover {
-  color: #1C2431;
+  color: #65E2D9;
   transition: fade-in 0.1s;
 }
 
@@ -58,6 +81,10 @@ body {
 .dark-mode {
   background-color: white;
   color: black;
+}
+
+.hero-intro .col-md-12 {
+  background-color: #202A3C;
 }
 
 .hero-intro img {
@@ -79,6 +106,12 @@ body {
   margin-top: 3rem;
 }
 
+@media (max-width: 990px) {
+  .hero-intro h1 {
+    width: 100%;
+  }
+}
+
 .hero-intro p {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -89,6 +122,12 @@ body {
   margin-bottom: 6rem;
 }
 
+@media (max-width: 990px) {
+  .hero-intro p {
+    width: 100%;
+  }
+}
+
 .hero-intro button {
   background-color: #65E2D9;
   color: #fff;
@@ -96,6 +135,7 @@ body {
   border: none;
   font-size: 16px;
   font-weight: bold;
+  background: linear-gradient(to right, #65e2d9, #339ecc);
   margin: auto;
   display: flex;
   padding: 10px 70px;
@@ -151,6 +191,12 @@ body {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 990px) {
+  .stay-productive .productive-text h1 {
+    width: 100%;
+  }
+}
+
 @media (min-width: 330px) and (max-width: 996px) {
   .stay-productive .productive-text h1 {
     text-align: center;
@@ -168,18 +214,45 @@ body {
   width: 100%;
 }
 
+@media (max-width: 990px) {
+  .stay-productive .productive-text p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 990px) {
+  .stay-productive .productive-text p {
+    text-align: center;
+  }
+}
+
 .stay-productive .productive-text a {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   color: #fff;
+  border-bottom: 1px solid #65E2D9;
   color: #65E2D9;
-  text-align: left;
   display: block;
+  text-align: left;
+  padding-bottom: 3px;
+  width: fit-content;
+}
+
+@media (max-width: 990px) {
+  .stay-productive .productive-text a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 990px) {
+  .stay-productive .productive-text a {
+    text-align: center;
+  }
 }
 
 .stay-productive .quotes {
-  margin-top: 15em;
-  margin-bottom: 15em;
+  margin-top: 20em;
+  margin-bottom: 10em;
 }
 
 .stay-productive .quotes .quote-img::before {
@@ -203,6 +276,12 @@ body {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 990px) {
+  .stay-productive .quotes .col-md-12 p {
+    width: 100%;
+  }
+}
+
 .stay-productive .quotes .col-md-12 img {
   width: 40px;
   border-radius: 50%;
@@ -218,6 +297,12 @@ body {
   padding-left: 5px;
 }
 
+@media (max-width: 990px) {
+  .stay-productive .quotes .col-md-12 span {
+    width: 100%;
+  }
+}
+
 .stay-productive .quotes .col-md-12 small {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -229,6 +314,12 @@ body {
   margin-top: -14px;
 }
 
+@media (max-width: 990px) {
+  .stay-productive .quotes .col-md-12 small {
+    width: 100%;
+  }
+}
+
 .stay-productive .get-early-access {
   background-color: #202A3C;
   max-width: 900px;
@@ -237,7 +328,7 @@ body {
   position: relative;
   border-radius: 5px;
   box-shadow: 13px 7px 53px -5px #202a3c;
-  top: 295px;
+  top: 225px;
   padding: 12px;
 }
 
@@ -249,6 +340,12 @@ body {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 990px) {
+  .stay-productive .get-early-access h1 {
+    width: 100%;
+  }
+}
+
 .stay-productive .get-early-access p {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -258,10 +355,22 @@ body {
   margin: auto;
 }
 
+@media (max-width: 990px) {
+  .stay-productive .get-early-access p {
+    width: 100%;
+  }
+}
+
 .stay-productive .get-early-access .form-fields {
   width: auto;
   margin: 2em auto;
   display: table;
+}
+
+@media (max-width: 636px) {
+  .stay-productive .get-early-access .form-fields {
+    width: 50%;
+  }
 }
 
 .stay-productive .get-early-access .form-fields button {
@@ -271,6 +380,7 @@ body {
   border: none;
   font-size: 16px;
   font-weight: bold;
+  background: linear-gradient(to right, #65e2d9, #339ecc);
   padding: 8px 26px;
 }
 
@@ -310,6 +420,12 @@ body {
   padding: 5px;
 }
 
+@media (max-width: 990px) {
+  .stay-productive .error {
+    width: 100%;
+  }
+}
+
 .stay-productive .success {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -320,20 +436,10 @@ body {
   padding: 5px;
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: -30px;
-  width: 100%;
-  z-index: 999;
-  transition: 0.5s;
-  background-color: #65E2D9;
-  padding-top: 2em;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 411px;
+@media (max-width: 990px) {
+  .stay-productive .success {
+    width: 100%;
+  }
 }
 
 .footer {
@@ -342,6 +448,12 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   color: #fff;
+}
+
+@media (max-width: 990px) {
+  .footer {
+    width: 100%;
+  }
 }
 
 .footer .col-md-3 {
@@ -356,8 +468,15 @@ body {
   padding-right: 5px;
 }
 
-.footer p {
+.footer p > a {
+  color: white;
   padding-bottom: 5px;
+  text-decoration: none;
   word-break: break-all;
+}
+
+.footer p > a:hover {
+  color: #65E2D9;
+  transition: fade-in 0.1s;
 }
 /*# sourceMappingURL=app.css.map */
