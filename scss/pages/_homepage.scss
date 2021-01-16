@@ -102,9 +102,8 @@
             margin-bottom: 37px;
         }
         p {
+        @include p;
         font-family: $fontFamily2;
-        font-size: 14px;
-        color: #fff;
         text-align: center;
         margin: auto;
         width: 75%;
