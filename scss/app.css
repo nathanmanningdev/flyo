@@ -88,6 +88,18 @@ body {
   background-color: #202A3C;
 }
 
+.hero-intro .col-md-12::after {
+  content: '';
+  width: 100%;
+  height: 55%;
+  display: block;
+  background: url("../../images/bg-curvy-mobile.svg") no-repeat, linear-gradient(180deg, var(--intro-color) 141px, var(--main-color) 41px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
 .hero-intro img {
   display: flex;
   margin: auto;
@@ -146,6 +158,19 @@ body {
 
 .info {
   background-color: #202A3C;
+}
+
+.info::after {
+  content: "";
+  background-image: url(../../images/bg-curvy-mobile-2.png);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  transform: translateY(50%);
 }
 
 .info .col-md-6 {
