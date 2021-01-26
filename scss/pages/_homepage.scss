@@ -61,19 +61,21 @@
 }
 
 .hero-intro {
+    background-color: $testimonialsBackground;
+    // background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23aca8a8' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-image: url("../../images/bg-curvy-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        margin-bottom: 3em;
     .col-md-12 {
         background-color: $testimonialsBackground;
-        &::after {
-            content: '';
-  width: 100%;
-  height: 55%;
-  display: block;
-  background: url('../../images/bg-curvy-mobile.svg') no-repeat, linear-gradient(180deg, var(--intro-color) 141px, var(--main-color) 41px);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
+        @include min-width(small) {
+            @include max-width(medium) {
+            background-color: rgb(94, 255, 0);        
+            }
         }
+    }
 
     }
 
@@ -113,20 +115,9 @@
 
 .info {
     background-color: $testimonialsBackground;
-    &::after {
-        content: "";
-        background-image: url(../../images/bg-curvy-mobile-2.png);
-        background-size: contain;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-repeat: no-repeat;
-        -webkit-transform: translateY(50%);
-        transform: translateY(50%);
 
-    }
+
+
 
     .col-md-6 {
         text-align: center;
@@ -157,7 +148,7 @@
 
 
 .stay-productive {
-    margin-top: 15em;
+    margin-top: 8em;
     background-color: $mainBackground;
 
     .productive-text {
@@ -328,9 +319,10 @@
 }
 
 .footer {
+    @include p;
     background-color: $footerBackground;
     padding-top: 8em;
-    @include p;
+    margin-top: -3em;
 
     .col-md-3 {
         margin-bottom: 4rem;

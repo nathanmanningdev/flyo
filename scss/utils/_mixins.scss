@@ -28,3 +28,27 @@
     background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
 }
 
+
+
+$screen-size : (
+    small : 325px,
+    medium : 700px,
+);
+
+@mixin min-width($pxSize){
+    $breakpoint-value: map-get($screen-size, $pxSize);
+
+
+    @media screen and (min-width: $breakpoint-value) {
+        @content;
+    }
+} 
+
+@mixin max-width($pxSize){
+    $breakpoint-value: map-get($screen-size, $pxSize);
+
+
+    @media screen and (max-width: $breakpoint-value) {
+        @content;
+    }
+} 
