@@ -84,23 +84,8 @@ body {
   color: black;
 }
 
-.hero-intro {
-  background-color: #202A3C;
-  background-image: url("../../images/bg-curvy-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  margin-bottom: 3em;
-}
-
 .hero-intro .col-md-12 {
   background-color: #202A3C;
-}
-
-@media screen and (min-width: 325px) and (max-width: 700px) {
-  .hero-intro .col-md-12 {
-    background-color: #5eff00;
-  }
 }
 
 .hero-intro img {
@@ -253,7 +238,6 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   color: #fff;
-  border-bottom: 1px solid #65E2D9;
   color: #65E2D9;
   display: block;
   text-align: left;
@@ -422,7 +406,7 @@ body {
 
 @media (max-width: 662px) {
   .stay-productive .get-early-access .form-fields input {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
   }
 }
 
@@ -484,7 +468,7 @@ body {
 }
 
 .footer img {
-  margin-bottom: 3rem;
+  margin: 3em 0 3em 0;
 }
 
 .footer i {
